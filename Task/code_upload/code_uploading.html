@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>JQuery LinedTextArea Demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<style>
+
+    .prettyprint ol.linenums li { list-style-type: decimal; }
+
+</style>  
+
+    
+  <script type="text/javascript">
+
+	 $(document).ready(function(){
+        $('input[type="file"]').change(function(e){
+          var loc = window.location.pathname;
+var dic=loc.substring(0, loc.lastIndexOf('/'));
+            var fileName = e.target.files[0].name;
+             $.get(dic+'/'+fileName, function(Data) {
+
+                   var lines = Data.split("\n");
+    $.each(lines, function(n, elem) {
+  
+      $('code').append(elem+"<br>")
+   
+      
+    });
+    $('head').append("<script src=\"./js/highlight.js\"><\/script>")
+    $('#h').prepend("<?prettify linenums=true?>")
+     load_js()
+  }, 'text');   
+        });
+    });
+
+</script>
+
+</head>
+<body>
+  <form>
+        <input type="file">
+    </form>
+   
+   <div id="h">
+  
+    <pre class="prettyprint">
+          <code class="prettyprint"></code>
+        </pre>
+       </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+input {
+    color: black;
+
+}
+
+html,
+body {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+
+}
+
+#visualization {
+    height: 78vh;
+
+}
+
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #f8f8f8;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.8;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(0, 68, 195);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(0, 68, 195);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.row {
+    color: white
+}
+
+#t1 {
+    color: black;
+    background-color: blue
+}
+
+.table-cell-edit {
+    background-color: lightgoldenrodyellow;
+}
+
+#loading {
+    width: 50%;
+    height: 35%;
+    top: 25%;
+    left: 0;
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    z-index: 99;
+    text-align: center;
+}
+
+#loading-image {
+    position: absolute;
+    top: 70%;
+    height: 30%;
+    left: 90%;
+    z-index: 100;
+}
+
+select {
+    font-family: Cursive;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+
+}
+
+#body_378b_0{background-image: linear-gradient(rgb(0, 0, 0), rgb(26, 35, 85));}
