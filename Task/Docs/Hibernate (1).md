@@ -112,8 +112,13 @@ The mapping file name conventionally, should be class_name.hbm.xml. There are ma
 The configuration file contains information about the database and mapping file. Conventionally, its name should be hibernate.cfg.xml .
 
 ##### 4) Create the class that retrieves or stores the object
-#
+In this class, we are simply storing the employee object to the database. //StoreData.java
+
 ##### 5) Load the jar file
 For successfully running the hibernate application, you should have the hibernate5.jar file.
 
-###### Run the App
+##### Run the App
+To run the hibernate application
+
+- Load the jar files for hibernate. (One of the way to load the jar file is copy all the jar files under the JRE/lib/ext folder). It is better to put these jar files inside the public and private JRE both.
+> Now, run the StoreData class by java com.javatpoint.mypackage.StoreData
